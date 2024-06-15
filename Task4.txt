@@ -1,0 +1,15 @@
+
+git checkout master
+
+
+git pull origin master
+
+git merge feature-branch
+
+
+git add conflicted-file.txt
+
+
+git commit -m "Resolved merge conflict between master and feature-branch"
+
+git push origin master

@@ -1,0 +1,12 @@
+
+git reset --soft HEAD~1
+
+git push --force origin your-branch-name
+
+git rm --cached feature.txt
+
+git commit -m "Remove feature.txt"
+
+git push origin your-branch-name
+
+

@@ -1,0 +1,11 @@
+        git init
+
+	git remote add origin https://github.com/deveshsingh1426/Assignment-2.git
+
+	echo "Hello, World!" > hello.txt
+
+	git add hello.txt
+
+	git commit -m "Add hello.txt"
+
+	git push -u origin master

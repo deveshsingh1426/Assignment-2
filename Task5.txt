@@ -1,0 +1,35 @@
+git init my-repo
+
+cd my-repo
+
+echo "Initial content" > file.txt
+
+
+git add file.txt
+
+git commit -m "Initial commit"
+
+git checkout -b feature-branch
+
+echo "Feature content" >> file.txt
+
+git add file.txt
+
+git commit -m "Add feature content"
+
+git checkout master
+
+git merge feature-branch
+
+git remote add origin https://github.com/username/my-repo.git
+
+git push -u origin master
+
+git checkout -b hotfix-branch
+
+echo "Hotfix content" >> file.txt
+
+
+git add file.txt
+git commit -m "Apply hotfix"
+git push origin hotfix-branch
